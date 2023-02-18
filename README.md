@@ -12,7 +12,7 @@ npm install
 -run run npm install -g json-server
 ```
 -------------------------------------------
-## Development server
+#### Development server
 ```
 - run json-server --watch db.json 
 - Run `ng s` for a dev server. Navigate to `http://localhost:4200/`. 
