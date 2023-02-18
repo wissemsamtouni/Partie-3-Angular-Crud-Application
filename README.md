@@ -5,11 +5,11 @@
 
 ##### Client Install
 ```
-npm install 
+- run npm install 
 ```
 ##### Server Install
 ```
--run run npm install -g json-server
+- run npm install -g json-server
 ```
 -------------------------------------------
 #### Development server
