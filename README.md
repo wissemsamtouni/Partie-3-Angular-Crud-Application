@@ -43,7 +43,7 @@ npm install
 	</tr>
 	<tr>
 		<td></td>
-		<td>B</td>
+		<td></td>
 	</tr>
   <tr>
 		<td></td>
