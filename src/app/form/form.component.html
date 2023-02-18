@@ -1,0 +1,54 @@
+<br>
+<br>
+<br>
+
+<form #form="ngForm">
+
+
+  <br>
+
+  <br>
+  <div>
+  <div class="form-group">
+    <label for="formGroupExampleInput3">First Name :</label>
+    <input type="text" name="titre" required pattern="[a-zA-Z]{3,20}$" #titre="ngModel" [(ngModel)]="Person.first_name" class="form-control" id="formGroupExampleInput3" placeholder="taper votre prenom">
+
+  </div>
+    <div *ngIf="titre.invalid && titre.touched">
+      <p *ngIf="titre.hasError('required')">Field First Name  is required</p>
+      <p *ngIf="titre.hasError('pattern')">respect the pattern</p>
+    </div>
+  </div>
+  <br>
+  <div>
+  <div class="form-group">
+    <label for="formGroupExampleInput3">Last Name :</label>
+    <input type="text" name="description" required  pattern="[a-zA-Z]{3,20}$" #desc="ngModel"[(ngModel)]="Person.last_name" class="form-control" id="formGroupExampleInput4" placeholder="taper votre prenom">
+
+  </div>
+    <div *ngIf="desc.invalid && desc.touched">
+      <p *ngIf="desc.hasError('required')">Field Last Name  is required</p>
+      <p *ngIf="desc.hasError('pattern')">respect the pattern</p>
+    </div>
+
+  </div>
+  <br>
+  <div>
+  <div class="form-group">
+    <label for="formGroupExampleInput4">Email Adress :</label>
+    <input type="text" name="entreprise" required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" #entr="ngModel" [(ngModel)]="Person.email_adress" class="form-control" id="formGroupExampleInput5" placeholder="taper votre prenom">
+
+  </div>
+    <div *ngIf="entr.invalid && entr.touched">
+      <p *ngIf="entr.hasError('required')">Field Email Adress is required</p>
+      <p *ngIf="entr.hasError('pattern')">respect the pattern</p>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <div class="col-auto">
+    <button type="submit" (click)="save()" [disabled]="form.invalid" class="btn btn-primary mb-2"  >{{action}}</button>
+  </div>
+
+</form>
