@@ -1,27 +1,58 @@
-# Examen
+# -
+ 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.9.
+## Steps for Project Execution :
 
+##### Client Install
+```
+npm install 
+```
+##### Server Install
+-run run npm install -g json-server
+-------------------------------------------
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- run json-server --watch db.json 
+- Run `ng s` for a dev server. Navigate to `http://localhost:4200/`. 
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Technology</th>
+</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>Front-End</td>
+		<td>Angular, Bootstrap, HTML5, CSS3, Typescript</td>
+	</tr>
+	<tr>
+		<td>Back-End</td>
+		<td>db.json</td>
+	</tr>
+  <tr>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>API Testing</td>
+		<td>Postman</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>B</td>
+	</tr>
+  <tr>
+		<td></td>
+		<td></td>
+	</tr>
+    <tr>
+		<td></td>
+		<td></td>
+	</tr>
+</tbody>
+</table>
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
